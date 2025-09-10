@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO.Pipes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +12,7 @@ namespace Semana1_C_
     {
         static void Main(string[] args)
         {
-            ejer2();
+            ejer5();
             Console.ReadKey();
         }
 
@@ -25,21 +27,48 @@ namespace Semana1_C_
         }
         static void ejer2()
         {
-            string nombre;
-            nombre = "Juan";
-            Console.WriteLine("\" + nombre + "\");
+            Console.Write("\"Leonardo\"");
         }
         static void ejer3()
         {
+            Console.Write("Ingrese numero 1: ");
+            int num1 = int.Parse(Console.ReadLine());
 
+            Console.Write("Ingrese numero 2: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            double divi =(double)num1/(double)num2;
+
+            Console.WriteLine("\nSuma: "+(num1+num2));
+            Console.WriteLine("Resta: " + (num1-num2));
+            Console.WriteLine("Multiplicacion: " + (num1*num2));
+            Console.WriteLine("Division: " + divi);
         }
         static void ejer4()
         {
+            Console.Write("Ingrese un numero decimal: ");
+            double num = double.Parse(Console.ReadLine());
 
+            double raiz2 = Math.Sqrt(num);
+            double redo = Math.Round(num, 0);
+            double cubo = Math.Pow(num, 3);
+            double raiz3 = Math.Pow(num, 1 / 3d);
+
+            Console.WriteLine("\nRaiz 2: " + raiz2);
+            Console.WriteLine("Redondeado: " + redo);
+            Console.WriteLine("Al cubo: " + cubo);
+            Console.WriteLine("Raiz cubica: " + raiz3);
         }
         static void ejer5()
         {
+            Console.Write("Ingrese un numero: ");
+            string num = Console.ReadLine();
 
+            int entero = int.Parse(Console.ReadLine());
+            double deci = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Resto: " + (entero % 2));
+            Console.WriteLine("Divido 3: " + (deci / 3));
         }
         static void ejer6()
         {
