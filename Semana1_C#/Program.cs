@@ -12,7 +12,7 @@ namespace Semana1_C_
     {
         static void Main(string[] args)
         {
-            ejer5();
+            ejer6();
             Console.ReadKey();
         }
 
@@ -72,7 +72,16 @@ namespace Semana1_C_
         }
         static void ejer6()
         {
+            Console.Write("Ingrese una cantidad de segundos: ");
+            int seg = int.Parse(Console.ReadLine());
 
+            int hrs = (seg / 3600);
+            int min = (seg / 60);
+            int segRest = (seg % 60);
+
+            Console.WriteLine("\nhoras: " + hrs);
+            Console.WriteLine("minutos: " + min);
+            Console.WriteLine("Segundos: " + segRest);
         }
     }
 }

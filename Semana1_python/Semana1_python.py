@@ -1,4 +1,4 @@
-﻿def ejer1():
+def ejer1():
     nombre = input("Ingrese su nombre: ")
     carrera = input("Ingrese su carrera: ")
 
@@ -8,13 +8,13 @@ def ejer2():
     print("\"Leonardo\"")
 
 def ejer3():
-    num1 = int(input("Ingrese numero 1: ")):
-    num2 = int(input("Ingrese numero 1: ")):
+    num1 = int(input("Ingrese numero 1: "))
+    num2 = int(input("Ingrese numero 1: "))
 
     print("\nSuma: ", (num1+num2));
     print("Resta: ", (num1-num2));
     print("Multiplicacion: ", (num1*num2));
-    print("Division: ", divi);
+    print("Division: ", (num1/num2));
 
 import  math #importando la libreria math
 
@@ -40,4 +40,11 @@ def ejer5():
     print("\nResto: ", entero%2)
     print("Dividido: ", deci/3)
 
-ejer5()
+def ejer6():
+    seg = int(input("Ingrese una cantidad en segundos: "))
+
+    print("\nHoras: ", (seg//3600))
+    print("Minutos: ", (seg//60))
+    print("Segundos: ", (seg%60))
+
+ejer6()
